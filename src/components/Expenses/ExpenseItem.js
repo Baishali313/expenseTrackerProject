@@ -14,6 +14,10 @@ function ExpenseItem(props){
     // const date=props.date.toLocaleString('en-US',{date:'2-digit'});
     // const year= props.date.getFullYear();
 
+    const clickHandler= ()=>{
+        console.log('clicked!!!');
+    }
+
 
 
 
@@ -24,6 +28,7 @@ function ExpenseItem(props){
                 <h2>{props.title} </h2>
                 <h2>{props.locationOfExpenses}</h2>
                 <div className='expense-item__price'>{props.amount}</div>
+                <button onClick={clickHandler}>change title</button>
             
             
         </div>
