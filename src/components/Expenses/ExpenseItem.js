@@ -11,7 +11,10 @@ function ExpenseItem(props) {
 
   const clickHandler = () => {
     setTitle('updated');
-    console.log(title); // This may log the previous title due to the asynchronous nature of state updates
+    
+    console.log(title);
+     // This may log the previous title due to the asynchronous nature of state updates
+     
   };
 
   const deleteHandler = () => {
